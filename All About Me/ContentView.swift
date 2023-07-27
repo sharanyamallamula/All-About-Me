@@ -25,7 +25,7 @@ struct ContentView: View {
                             .cornerRadius(15.0)
                             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                         VStack() {
-                            Text("Ranya!")
+                            Text("Ranya")
                                 .font(.title)
                                 .multilineTextAlignment(.center)
                                 .padding()
