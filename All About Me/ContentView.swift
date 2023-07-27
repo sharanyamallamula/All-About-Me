@@ -25,7 +25,7 @@ struct ContentView: View {
                             .cornerRadius(15.0)
                             .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
                         VStack() {
-                            Text("Ranya")
+                            Text("Ranya!")
                                 .font(.title)
                                 .multilineTextAlignment(.center)
                                 .padding()
@@ -59,9 +59,21 @@ struct ContentView: View {
             .background(Rectangle().foregroundColor(Color(red: 0.6313725490196078, green: 0.8, blue: 0.6470588235294118)))
             .cornerRadius(15.0)
             .padding([.leading, .bottom, .trailing])
-//            HStack() {
-//
-//            } //hstack closing
+            HStack() {
+                Image("gallery2")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(6.0)
+                Image("gallery1")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(6.0)
+                Image("gallery3")
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(6.0)
+            } //hstack closing
+            .padding(.horizontal)
         } //vstack closing
     } // closing bracket
 } // closing bracket
